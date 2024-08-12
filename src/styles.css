@@ -1,0 +1,670 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000; 
+  color: #ffffff; 
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0 20px; }
+header, footer {
+  background-color: #000000; 
+  padding: 20px;
+  color: #ffffff; 
+  position: fixed;
+  width: calc(100% - 40px); 
+  z-index: 1000;}
+header {
+  top: 0;}
+footer {
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end; }
+.footer-content {
+  display: flex;
+  gap: 20px; }
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;}
+header .logo img {
+  height: 50px; }
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;}
+header ul li {
+  color: #ffffff; }
+main {
+  padding-top: 80px; 
+  padding-bottom: 60px; }
+section {
+  height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;}
+
+.hero {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center; 
+  padding: 20px;}
+.hero-image {
+  width: 100%;
+  max-width: 600px; 
+  height: auto;
+  margin-bottom: 20px; }
+.hero-text {
+  max-width: 600px; }
+.hero button {
+  margin-top: 20px; 
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;}
+.how-it-works, .features {
+  background-color: #111111; }
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;}
+nav ul li {
+  display: inline;}
+nav ul li button {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;}
+nav ul li button:hover {
+  text-decoration: none;}
+
+.about {
+  padding: 40px 20px;
+  background-color: #000; 
+  color: #fff; 
+  font-family: 'Arial', sans-serif;}
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #333; 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); }
+.about h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #fff; }
+.about-intro, .about-conclusion {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #ccc; }
+.about-content {
+  margin: 20px 0;}
+.about-content h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #fff; }
+.about ul {
+  list-style-type: disc;
+  padding-left: 20px;}
+.about ul li {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #ccc; }
+.about ul li::marker {
+  color: #fff; }
+
+.how-it-works {
+  padding: 40px 20px;
+  background-color: #000; 
+  color: #fff; 
+  font-family: 'Arial', sans-serif;}
+.how-it-works-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #333; 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); }
+.how-it-works h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #fff; 
+  text-align: center;}
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;}
+.step {
+  font-size: 1.5em;
+  color: #ccc; 
+  display: flex;
+  align-items: center;}
+.step-number {
+  font-size: 1.8em;
+  color: #fff; 
+  margin-right: 10px;}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; 
+    color: #ffffff; 
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0 20px; }
+.how-it-works {
+    padding: 40px 20px;
+    background-color: #000; 
+    color: #fff; 
+    font-family: 'Arial', sans-serif;}
+.how-it-works-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #333; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); }
+.how-it-works h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff; 
+    text-align: center;}
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;}
+.step {
+    font-size: 1.5em;
+    color: #ccc; 
+    display: flex;
+    align-items: flex-start;}
+.step-number {
+    font-size: 1.8em;
+    color: #fff; 
+    margin-right: 10px;}
+.step-content {
+    max-width: 600px;}
+.step-content h3 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #fff; }
+.step-content p {
+    font-size: 1.2em;
+    color: #ccc; }
+header {
+    background-color: #000000; 
+    padding: 20px 40px; 
+    color: #ffffff; 
+    position: fixed;
+    width: calc(100% - 80px); 
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;}
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;}
+.logo img {
+    height: 80px; }
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;}
+nav ul li {
+    display: inline-block;}
+nav ul li button {
+    background: #333; 
+    border: none;
+    color: #fff; 
+    font: inherit;
+    cursor: pointer;
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    text-transform: uppercase; }
+nav ul li button:hover {
+    background: #555; }
+main {
+    padding-top: 120px; 
+    padding-bottom: 60px; }
+section {
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;}
+header, footer {
+    background-color: #000000; 
+    padding: 20px;
+    color: #ffffff; 
+    position: fixed;
+    width: calc(100% - 40px); 
+    z-index: 1000;}
+header {
+    top: 0;}
+footer {
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end; }
+.footer-content {
+    display: flex;
+    gap: 20px; }
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;}
+header .logo img {
+    height: 50px; }
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;}
+header ul li {
+    color: #ffffff; }
+main {
+    padding-top: 80px; 
+    padding-bottom: 60px; }
+.hero-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #000; 
+    color: #fff; }
+.hero-about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px; }
+.hero-image {
+    width: 100%;
+    max-width: 700px; 
+    height: auto;}
+.about-content {
+    max-width: 600px; }
+.about-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff; 
+    text-align: center;}
+.about-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #ccc; }
+.about-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #ccc; }
+.about-content button {
+    margin-top: 20px; 
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #333; 
+    border: none;
+    color: #fff; 
+    border-radius: 5px; 
+    text-transform: uppercase; 
+    justify-content: center;}
+.about-content button:hover {
+    background: #555; }
+.button-container {
+    display: flex;
+    justify-content: center; 
+    width: 100%; }
+.button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #333; 
+    border: none;
+    color: #fff; 
+    border-radius: 5px; 
+    text-transform: uppercase; }
+.button-container button:hover {
+    background: #555; }
+.justified-text {
+    text-align: justify; }
+.input-section {
+    padding: 40px 20px;
+    background-color: #111; 
+    color: #fff; 
+    text-align: center; }
+.text-box {
+    margin-top: 20px;}
+.text-box input {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    margin-bottom: 10px;}
+.text-box button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #333; 
+    border: none;
+    color: #fff; 
+    border-radius: 5px; 
+    text-transform: uppercase; }
+.text-box button:hover {
+    background: #555; }
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #000; 
+    color: #fff; }
+.input-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: #000; }
+.dietary-restrictions-form {
+    background-color: #111; 
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 2000px;}
+.dietary-restrictions-form h3 {
+    margin-bottom: 20px;
+    text-align: center;}
+.form-group {
+    margin-bottom: 15px;}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;}
+.form-group input,
+  .form-group select {
+    width: 60%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #222; 
+    color: #fff; }
+.form-group input::placeholder {
+    color: #888; }
+.text-box {
+    margin-top: 20px;
+    text-align: center;}
+.text-box input {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #222; 
+    color: #fff; }
+.dietary-restrictions-form {
+    width: 100%;
+    padding: 20px;}
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;}
+.form-group {
+    flex: 1;
+    margin-bottom: 15px;}
+.form-group input {
+    width: 60%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #222; 
+    color: #fff; }
+.input-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    width: 100%; 
+    background-color: #000; }
+.dietary-restrictions-form {
+    width: 120%; 
+    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;}
+.dietary-restrictions-form h3 {
+    margin-bottom: 20px;
+    text-align: left;}
+.form-group {
+    flex: 1;
+    margin-bottom: 5px;}
+
+.input-section .form-group input,
+.input-section .form-group select,
+.input-section .form-group textarea {
+  width: 60%; 
+  height: 2.5rem;
+  box-sizing: border-box; }
+
+.input-section .form-group {
+  margin-bottom: 1rem;}
+.input-section .form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;}
+.input-section .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;}
+.input-section .text-box {
+  text-align: center;
+  margin-top: 1rem;}
+.input-section .text-box button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;}
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;}
+.form-group label {
+  width: 200px; 
+  margin-right: 10px;}
+.form-group input,
+.form-group select {
+  flex: 1;
+  padding: 8px;
+  line-height: 1.5;
+  font-size: 16px;}
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;}
+.logo {
+  flex: 1;}
+.title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;}
+nav {
+  flex: 1;}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;}
+nav ul li {
+  margin-left: 20px;}
+  .error-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .error-popup-content {
+    background: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .error-popup-content button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #result {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .result-content h3 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+  }
+  
+  .meal-day {
+    margin-bottom: 20px;
+  }
+  
+  .meal-day h4 {
+    margin-top: 0;
+  }
+  
+  .grocery-category {
+    margin-bottom: 15px;
+  }
+  
+  .grocery-category h4 {
+    margin-top: 0;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+
+  #result {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  h2 {
+    color: #149414;
+    margin-bottom: 10px;
+  }
+  
+  .grocery-list ul {
+    list-style-type: square;
+    padding-left: 20px;
+    background-color: #000000;
+    border: 1px solid #ddd;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: left;
+    align-items: center;
+  }
+  
+  .meal-plan {
+    margin-top: 20px;
+  }
+  
+  .days-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .day-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .meal-day {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: #000000;
+    flex: 1;
+  }
+  
+  .meal-day h3 {
+    margin-top: 0;
+  }
+  
+  .meal-item {
+    margin-bottom: 5px;
+  }
+  
+  strong {
+    color: #149414;
+  }
+  
+  .grocery-list-columns {
+    columns: 2; 
+    -webkit-columns: 2; 
+    -moz-columns: 2; 
+    list-style-type: none; 
+    padding: 0; 
+
+  }
+  
+  .grocery-list-columns li {
+    break-inside: avoid; 
+    padding: 5px 0; 
+  }
+
+  .error-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .error-content {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .error-content button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .error-content button:hover {
+    background-color: #ddd;
+  }
